@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Gestion des commandes{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ path('app_accueil') }}">Accueil</a>
+        <a href="{{ path('app_client') }}">Clients</a>
+        <a href="{{ path('app_produit') }}">Produits</a>
+    </nav>
+
+    <main>
+        {% block body %}{% endblock %}
+    </main>
+</body>
+</html>
+
